@@ -59,7 +59,7 @@ window.removeAlbum = (tenAlbum) => {
     manage.removeAlbum(tenAlbum);
     manage.saveAlbum();
     renderAlbum();
-    alert("This Album was removed !");
+
 }
 
 //  BTN EDIT
