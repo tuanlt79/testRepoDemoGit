@@ -123,3 +123,4 @@ document.getElementById("btnCapNhatAlbum").onclick = (event) => {
 console.log('userB')
 console.log('userA')
 console.log('userc')
+console.log('userZYX');
