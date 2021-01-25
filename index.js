@@ -101,25 +101,23 @@ document.getElementById("btnCapNhatAlbum").onclick = (event) => {
     // renderAlbum();
 };
 
-/* let number1 = 5;
-let number2 = number1;
-number2 = 10;
-console.log('num1', number1);
-console.log('num2', number2);
-let sinhVien1 = { ma: 1, ten: 'Nguyễn Văn A', tuoi: 18 };
-//gán địa chỉ không gán giá trị, cùng địa chỉ vùng nhớ
+//  let number1 = 5;
+// let number2 = number1;
+// number2 = 10;
+// console.log('num1', number1);
+// console.log('num2', number2);
+// let sinhVien1 = { ma: 1, ten: 'Nguyễn Văn A', tuoi: 18 };
+// gán địa chỉ không gán giá trị, cùng địa chỉ vùng nhớ
 // let sinhVien2 = sinhVien1;
 
-//sao chép giá trị, nằm ở 2 vùng nhớ khác nhau
-let sinhVien2 = { ...sinhVien1, lop: 'BC01', tuoi: 28 };
-sinhVien2.ten = 'Nguyễn Văn B';
-console.log('sv1 ', sinhVien1.ten);
-console.log('sv2 ', sinhVien2); */
+// sao chép giá trị, nằm ở 2 vùng nhớ khác nhau
+// let sinhVien2 = { ...sinhVien1, lop: 'BC01', tuoi: 28 };
+// sinhVien2.ten = 'Nguyễn Văn B';
+// console.log('sv1 ', sinhVien1.ten);
+// console.log('sv2 ', sinhVien2); */
 
-/* let abc = { a=1, b=2, c=3 }
-let xyz = { x=4, y=5, z=6 } */
-// abc = xyz;
-// console.log(abc);
-
-
-
+// let abc = { a=1, b=2, c=3 }
+// let xyz = { x=4, y=5, z=6 } */
+//  abc = xyz;
+//  console.log(abc);
+console.log('userB')
