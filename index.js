@@ -7,28 +7,29 @@ manage.getAlbum();
 // let album = new Album(); // dung album ngoai button khi add vao bi thay doi het album truoc do
 // BTD ADDALBUM
 document.getElementById("btnThemAlbum").onclick = (event) => {
-    event.preventDefault();
-    // create album from class
-    let album = new Album();
-    let arrInput = document.querySelectorAll("#inputFromUI input, #inputFromUI select");
-    for (let input of arrInput) {
-        let id = input.id;
-        let value = input.value;
-        album[id] = value;
-    }
-    // bi loi khong add ten khac
-    // manage.validateAlbum(album.tenAlbum); 
+  event.preventDefault();
+  // create album from class
+  let album = new Album();
+  let arrInput = document.querySelectorAll(
+    "#inputFromUI input, #inputFromUI select"
+  );
+  for (let input of arrInput) {
+    let id = input.id;
+    let value = input.value;
+    album[id] = value;
+  }
+  // bi loi khong add ten khac
+  // manage.validateAlbum(album.tenAlbum);
 
-    manage.addAlbum(album);
-    manage.saveAlbum();
-    renderAlbum();
-
+  manage.addAlbum(album);
+  manage.saveAlbum();
+  renderAlbum();
 };
 
 const renderAlbum = () => {
-    let renderDiv = '';
-    for (let obj of manage.albumList) {
-        renderDiv += `
+  let renderDiv = "";
+  for (let obj of manage.albumList) {
+    renderDiv += `
         <div class="col-md-4">
         <div class="card mb-4 box-shadow">
             <div class="reponsive-img"
@@ -48,57 +49,58 @@ const renderAlbum = () => {
         </div>
         </div>
         `;
-    }
-    document.getElementById("output").innerHTML = renderDiv;
-}
+  }
+  document.getElementById("output").innerHTML = renderDiv;
+};
 
 renderAlbum();
 
 //  BTN REMOVE
 window.removeAlbum = (tenAlbum) => {
-    manage.removeAlbum(tenAlbum);
-    manage.saveAlbum();
-    renderAlbum();
-
-}
+  manage.removeAlbum(tenAlbum);
+  manage.saveAlbum();
+  renderAlbum();
+};
 
 //  BTN EDIT
 window.editAlbum = (tenAlbum) => {
-    manage.editAlbum(tenAlbum);
-    manage.saveAlbum();
-    // manage.renderAlbum();
-}
+  manage.editAlbum(tenAlbum);
+  manage.saveAlbum();
+  // manage.renderAlbum();
+};
 
 //  BTN CAPNHATALBUM
 document.getElementById("btnCapNhatAlbum").onclick = (event) => {
-    event.preventDefault();
+  event.preventDefault();
 
-    // let album = new Album();
-    // console.log(album); // album khi new
+  // let album = new Album();
+  // console.log(album); // album khi new
 
-    // let arrInput = document.querySelectorAll("#inputFromUI input, #inputFromUI select");
-    // for (let input of arrInput) {
-    //     let id = input.id;
-    //     let value = input.value;
-    //     album[id] = value;
-    // }
-    // manage.updateAlbum(album.tenAlbum)
-    // console.log(manage.albumList);
-    // console.log(album); //album khi truyen value vao
+  // let arrInput = document.querySelectorAll("#inputFromUI input, #inputFromUI select");
+  // for (let input of arrInput) {
+  //     let id = input.id;
+  //     let value = input.value;
+  //     album[id] = value;
+  // }
+  // manage.updateAlbum(album.tenAlbum)
+  // console.log(manage.albumList);
+  // console.log(album); //album khi truyen value vao
 
-    let albumUpdated = new Album();
-    let arrInput = document.querySelectorAll("#inputFromUI input, #inputFromUI select");
-    for (let inputUpdated of arrInput) {
-        let id = inputUpdated.id;
-        let value = inputUpdated.value;
-        albumUpdated[id] = value;
-    }
-    
-    console.log(manage.albumList);
-    console.log(albumUpdated.tenAlbum);
-    manage.updateAlbum(albumUpdated)
+  let albumUpdated = new Album();
+  let arrInput = document.querySelectorAll(
+    "#inputFromUI input, #inputFromUI select"
+  );
+  for (let inputUpdated of arrInput) {
+    let id = inputUpdated.id;
+    let value = inputUpdated.value;
+    albumUpdated[id] = value;
+  }
 
-    // renderAlbum();
+  console.log(manage.albumList);
+  console.log(albumUpdated.tenAlbum);
+  manage.updateAlbum(albumUpdated);
+
+  // renderAlbum();
 };
 
 //  let number1 = 5;
@@ -120,6 +122,7 @@ document.getElementById("btnCapNhatAlbum").onclick = (event) => {
 // let xyz = { x=4, y=5, z=6 } */
 //  abc = xyz;
 //  console.log(abc);
-console.log('userB')
-console.log('userA')
+console.log("userB");
+console.log("userA");
 
+console.log("userAAAA");
