@@ -3,6 +3,7 @@ export class Manage {
     albumList = [];
     CurrentID='';
     findID='';
+    abc='';
     constructor() {
 
     }
