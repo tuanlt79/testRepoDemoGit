@@ -124,5 +124,8 @@ document.getElementById("btnCapNhatAlbum").onclick = (event) => {
 //  console.log(abc);
 console.log("userB");
 console.log("userA");
+console.log("spam");
+console.log("spam");
 
-console.log("usgfhgfherAAAA");
+
+
