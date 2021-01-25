@@ -1,7 +1,10 @@
 
 export class Manage {
     albumList = [];
-
+    CurrentID='';
+    findID='';
+    abc='';
+    xyz='';
     constructor() {
 
     }
