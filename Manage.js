@@ -4,6 +4,7 @@ export class Manage {
     CurrentID='';
     findID='';
     abc='';
+    xyz='';
     constructor() {
 
     }
